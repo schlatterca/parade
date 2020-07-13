@@ -1,0 +1,284 @@
+@font-face{
+  font-family: 'Arial Rounded MT';
+    src: url('ArialRoundedMTBold.eot');
+    src: url('ArialRoundedMTBold.eot?#iefix') format('embedded-opentype'),
+        url('ArialRoundedMTBold.woff2') format('woff2'),
+        url('ArialRoundedMTBold.woff') format('woff'),
+        url('ArialRoundedMTBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+#header {
+  font-family: 'Arial Rounded MT';
+  position: fixed;
+  top: 0;
+  background-color: white;
+  float: left;
+  color: #000;
+  padding: 0px;
+  width: 100%;
+  text-align: center;
+  border: 0px solid black;
+  height: 28vw;
+  /*font-size: 30px;*/
+  border-style: hidden hidden solid hidden;
+}
+
+.leftName, .rightName {
+  font-size: 9vw;
+  float: left;
+  /*width: 50%;*/
+  padding: 5px;
+  padding-left: 30px;
+  /*padding-right: 30px;*/
+}
+
+.underName {
+  font-size: 4vw;
+  float: left;
+  padding: 5px;
+  padding-left: 34px;
+  margin-top: -44px;
+  margin-bottom: -100px;
+}
+
+.panel_info {
+  font-family: 'Arial Rounded MT';
+  padding: 0 0px;
+  background-color: rgba(230, 230, 230);
+  border: 1px solid black;
+  border-radius: 10px;
+  overflow: hidden;
+  max-height: 0px;
+  transition: 0s;
+}
+
+.leftName {
+  text-align: left;
+}
+
+.rightName {
+  text-align: right;
+}
+
+.accordion {
+  float: left;
+  font-family: 'Arial Rounded MT';
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+  padding: 0px;
+  width: 33.33%;
+  text-align: center;
+  border: 1px solid black;
+  /*border-radius: 5px;*/
+  outline: none;
+  transition: 0.4s;
+  height: 8.75vh;
+  font-size: 30px;
+}
+
+.panel_event {
+  font-family: 'Arial Rounded MT';
+  padding: 0 0px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 10px;
+  overflow: hidden;
+  max-height: 0px;
+  transition: 0.4s;
+}
+
+#mainpanel{
+  background-color: black;
+}
+
+#inside{
+      font-family: 'Arial Rounded MT';
+      padding: 0 0 0 10px;
+      /*height: 10vw;*/
+      border border-radius: 10px;
+      border: 1px solid black;
+      text-align: left;
+      font-size: 4vw;
+    }
+
+.about {
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+  padding: 0px;
+  width: 100%;
+  text-align: center;
+  border: 1px solid white;
+ /*border-radius: 5px;*/
+  position: fixed;
+  overflow: hidden;
+  bottom: 0;
+  outline: none;
+  transition: 0.4s;
+  height: 60px;
+  font-size: 30px;
+  border-style: solid hidden hidden hidden;
+  border: 1px solid black;
+
+}
+
+@keyframes slideleft {
+  from { background-position: 0%; }
+  to { background-position: 90000%; }
+}
+
+/* .about {
+  background-image: url("Fascia.jpg"); //PER EVENTUALE MARQUEE
+  background-size: cover;
+  background-repeat: repeat-x;
+  animation: slideleft 1000s infinite linear;
+} */
+
+#inside{
+  font-family: 'Arial Rounded MT';
+  padding: 0 0 0 10px;
+  height: 10vh;
+  /*border-radius: 5px;*/
+  text-align: left;
+  font-size: 30px;
+}
+
+  #insidefirst{
+  font-family: 'Arial Rounded MT';
+  padding: 0 0 0 10px;
+  height: 10vh;
+  /*border-radius: 5px;*/
+  border-top: 1px solid black;
+  text-align: left;
+  font-size: 30px;
+}
+
+.panel {
+  font-family: 'Arial Rounded MT';
+  padding: 0 0px;
+  background-color: white;
+  display: none;
+  border-left: 0px solid black;
+  border-right: 0px solid white;
+  /*border-radius: 5px;*/
+  overflow: hidden;
+}
+
+p {
+  font-family: 'Arial Rounded MT';
+  padding: 0 1%;
+  font-size: 25px;
+}
+
+
+
+#insidepanel{
+  border:1px solid black;
+}
+
+#Mercoledì, #Giovedì, #Venerdì {
+  border-top: 1px solid black;
+  width: 33.1%;
+  border-right: 1px solid white;
+  border-left: 1px solid black;
+}
+
+#Archive{
+  border-bottom: 3px solid black;
+  border-top: 2px solid white;
+  border-left: 0px solid white;
+}
+
+#Live{
+  border-bottom: 1px solid white;
+  border-right: 1px solid white;
+  border-left: 1px solid black;
+}
+
+audio {
+width: 98%;
+margin: 0% 1% 1% 1%;
+}
+
+audio:focus{
+outline:none;
+}
+
+.livemain_22{
+
+  font-family: 'Arial Rounded MT';
+  background-color: rgb(255,255,255);
+  height: 1800px;
+  margin-top: 28vw;
+  width: 100%;
+  font-size: 3vw;
+  text-align: left;
+  padding: 30px;
+  border: 0px solid red;
+}
+
+.livemain_23{
+
+  font-family: 'Arial Rounded MT';
+  background-color: rgb(255,255,255);
+  height: 1800px;
+  margin-top: 28vw;
+  width: 100%;
+  font-size: 3vw;
+  text-align: left;
+  padding: 30px;
+  border: 0px solid red;
+}
+
+.livemain_24{
+
+  font-family: 'Arial Rounded MT';
+  background-color: rgb(255,255,255);
+  height: 1800px;
+  margin-top: 28vw;
+  width: 100%;
+  font-size: 3vw;
+  text-align: left;
+  padding: 30px;
+  border: 0px solid red;
+}
+
+.listElement{
+  border: 2px solid black;
+  height: 22vw;
+  transition-duration: 0.5s;
+}
+
+th {
+  font-family: 'Arial Rounded MT';
+  font-weight: normal;
+  padding-top: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.eventDate{
+  font-size: 3vw;
+  color: white;
+  text-align: left;
+  width: 100%;
+}
+
+.eventName{
+  font-size: 6vw;
+  text-align: left;
+  width: 80%;
+  line-height: 7vw;
+  padding-top: 5px;
+  padding-left: 20px;
+}
+
+#inside{
+  color: none;
+  border: none;
+  padding: 0px;
+}
