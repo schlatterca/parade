@@ -4,7 +4,7 @@
   <title>Isia Parade</title>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="css/main.css">
 </head>
 
 
@@ -13,14 +13,18 @@
 <!-- INIZIO BODY -->
 
 <body>
+  <!--GIF DI SFONDO-->
+  <div style="position: fixed; top: 26vw; left: -20px; margin: 0px; z-index: -1;">
+    <img src="img/PA.gif" style="height: 85vh; width: auto; opacity: 0.2">
+  </div>
   <!--HEADER-->
   <div id="header">
     <div class="leftName">
       <a href="http://www.isiaurbino.net/" target="_blank" style="text-decoration: none; color: lightgrey">ISIA U</a>
     </div>
     <div class="rightName">PARADE 2020</div>
-    <div class="underName">Interviste, progetti, playlist</div>
-    <div id="day22" class="leftName" style="transition:0.5s; width: 42%" onclick="open22()">22.07</div>
+    <div class="underName">Interviste, progetti, playlist. Mer 22—Ven 24.07</div>
+    <div id="day22" class="leftName" style="transition:0.5s; width: 42%" onclick="open22()">22</div>
     <div id="day23" class="rightName" style="transition:0.5s; float: center; color: lightgrey" onclick="open23()">23</div>
     <div id="day24" class="rightName" style="transition:0.5s; float: right; padding-right: 30px; color: lightgrey" onclick="open24()">24</div>
   </div>
@@ -28,7 +32,7 @@
 
   <!--PRINCIPALE-->
   <div class="livemain_22" style="display: block">
-    <div class="listElement" style="height: 22vw; max-height: 22vw">
+    <div class="listElement">
       <table style="width:100%; background-color: black">
         <tr class="eventDate">
           <th>Mercoledì 22.07.2020</th>
@@ -37,11 +41,14 @@
       </table>
       <div class="eventName">Wednesday morning<br>con Silvia Sfligiotti</div>
       <div id="inside" style="display:none">
-        <p><iframe width="100%" height="60" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&mini=1&light=1&feed=%2Fsonosolo%2Ffall-mix%2F" frameborder="0" ></iframe></p>
-        </div>
+        <p><iframe width="100%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2Fsonosolo%2Ffall-mix%2F" frameborder="0" ></iframe></p>
+        <img src="img/img1.jpg" width="30%">
+        <img src="img/img2.jpg" width="40%">
+        <img src="img/img3.jpg" width="80%" style="margin-left: 80px">
+      </div>
     </div>
 
-    <div class="listElement" style="height: 22vw; max-height: 22vw">
+    <div class="listElement">
       <table style="width:100%; background-color: black">
         <tr class="eventDate">
           <th>Mercoledì 22.07.2020</th>
@@ -49,29 +56,35 @@
         </tr>
       </table>
       <div class="eventName">Valto’s Bookshop Corner<br>con Francesco Valtolina</div>
+      <div id="inside" style="display:none">
+        <p><iframe width="100%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2Fsonosolo%2Ffall-mix%2F" frameborder="0" ></iframe></p>
+        <img src="img/img3.jpg" width="70%">
+        <img src="img/img1.jpg" width="20%">
+        <img src="img/img2.jpg" width="40%" style="margin-left: 80px">
+      </div>
     </div>
 
-    <div class="listElement" style="height: 22vw; max-height: 22vw">
+    <div class="listElement">
       <table style="width:100%; background-color: black">
         <tr class="eventDate">
           <th>Mercoledì 22.07.2020</th>
           <th style="float: right">11:00</th> 
         </tr>
       </table>
-      <div class="eventName">Esisto anche se non vuoi</div>
+      <div class="eventName">Esisto anche se non vuoi<br>&nbsp;</div>
     </div>
 
-    <div class="listElement" style="height: 22vw; max-height: 22vw">
+    <div class="listElement">
       <table style="width:100%; background-color: black">
         <tr class="eventDate">
           <th>Mercoledì 22.07.2020</th>
           <th style="float: right">11:30</th> 
         </tr>
       </table>
-      <div class="eventName">ISIA U x Santarcangelo</div>
+      <div class="eventName">ISIA U x Santarcangelo<br>&nbsp;</div>
     </div>
 
-    <div class="listElement" style="height: 22vw; max-height: 22vw">
+    <div class="listElement">
       <table style="width:100%; background-color: black">
         <tr class="eventDate">
           <th>Mercoledì 22.07.2020</th>
@@ -81,41 +94,71 @@
       <div class="eventName">Soundscape a cura<br>di Grotta Veterano</div>
     </div>
 
-    <div class="listElement" style="height: 22vw; max-height: 22vw">
+    <div class="listElement">
       <table style="width:100%; background-color: black">
         <tr class="eventDate">
           <th>Mercoledì 22.07.2020</th>
           <th style="float: right">12:00</th> 
         </tr>
       </table>
-      <div class="eventName">Showcase progetti 2019/20</div>
+      <div class="eventName">Showcase progetti 2019/20<br>&nbsp;</div>
     </div>
 
-    <div class="listElement" style="height: 22vw; max-height: 22vw">
+    <div class="listElement">
       <table style="width:100%; background-color: black">
         <tr class="eventDate">
           <th>Mercoledì 22.07.2020</th>
           <th style="float: right">12:00</th> 
         </tr>
       </table>
-      <div class="eventName">Showcase Tesi di Laurea</div>
+      <div class="eventName">Showcase Tesi di Laurea<br>&nbsp;</div>
     </div>
 
-    <div class="listElement" style="height: 22vw; max-height: 22vw">
+    <div class="listElement">
       <table style="width:100%; background-color: black">
         <tr class="eventDate">
           <th>Mercoledì 22.07.2020</th>
           <th style="float: right">12:00</th> 
         </tr>
       </table>
-      <div class="eventName">DJ-set fino a domani</div>
+      <div class="eventName">Showcase progetti 2019/20<br>&nbsp;</div>
+    </div>
+
+    <div class="listElement">
+      <table style="width:100%; background-color: black">
+        <tr class="eventDate">
+          <th>Mercoledì 22.07.2020</th>
+          <th style="float: right">12:00</th> 
+        </tr>
+      </table>
+      <div class="eventName">Selezione musicale a cura<br>di Godblesscomputers</div>
+    </div>
+
+    <div class="listElement">
+      <table style="width:100%; background-color: black">
+        <tr class="eventDate">
+          <th>Mercoledì 22.07.2020</th>
+          <th style="float: right">12:00</th> 
+        </tr>
+      </table>
+      <div class="eventName">Patrick Lacey in conversazione<br>con Finn Williams</div>
+    </div>
+
+    <div class="listElement">
+      <table style="width:100%; background-color: black">
+        <tr class="eventDate">
+          <th>Mercoledì 22.07.2020</th>
+          <th style="float: right">12:00</th> 
+        </tr>
+      </table>
+      <div class="eventName">Music sounds better with U<br>– DJ Golpe & Veridis</div>
     </div>
 
   </div>
 
 
   <div class="livemain_23" style="display:none">
-    <div class="listElement" style="height: 22vw; max-height: 22vw">
+    <div class="listElement">
       <table style="width:100%; background-color: black">
         <tr class="eventDate">
           <th>Giovedì 22.07.2020</th>
@@ -125,7 +168,7 @@
       <div class="eventName">Thursday morning<br>con Marta Sironi</div>
     </div>
 
-    <div class="listElement" style="height: 22vw; max-height: 22vw">
+    <div class="listElement">
       <table style="width:100%; background-color: black">
         <tr class="eventDate">
           <th>Giovedì 22.07.2020</th>
@@ -135,7 +178,7 @@
       <div class="eventName">Music discovery Channel<br>con Johnny Glamour</div>
     </div>
 
-    <div class="listElement" style="height: 22vw; max-height: 22vw">
+    <div class="listElement">
       <table style="width:100%; background-color: black">
         <tr class="eventDate">
           <th>Giovedì 22.07.2020</th>
@@ -145,7 +188,7 @@
       <div class="eventName">Unconventional Scripting</div>
     </div>
 
-    <div class="listElement" style="height: 22vw; max-height: 22vw">
+    <div class="listElement">
       <table style="width:100%; background-color: black">
         <tr class="eventDate">
           <th>Giovedì 22.07.2020</th>
@@ -155,7 +198,7 @@
       <div class="eventName">Capossela</div>
     </div>
 
-    <div class="listElement" style="height: 22vw; max-height: 22vw">
+    <div class="listElement">
       <table style="width:100%; background-color: black">
         <tr class="eventDate">
           <th>Giovedì 22.07.2020</th>
@@ -165,7 +208,7 @@
       <div class="eventName">All night long</div>
     </div>
 
-    <div class="listElement" style="height: 22vw; max-height: 22vw">
+    <div class="listElement">
       <table style="width:100%; background-color: black">
         <tr class="eventDate">
           <th>Giovedì 22.07.2020</th>
@@ -175,7 +218,7 @@
       <div class="eventName">Showcase progetti 2019/20</div>
     </div>
 
-    <div class="listElement" style="height: 22vw; max-height: 22vw">
+    <div class="listElement">
       <table style="width:100%; background-color: black">
         <tr class="eventDate">
           <th>Giovedì 22.07.2020</th>
@@ -185,7 +228,7 @@
       <div class="eventName">Showcase Tesi di Laurea</div>
     </div>
 
-    <div class="listElement" style="height: 22vw; max-height: 22vw">
+    <div class="listElement">
       <table style="width:100%; background-color: black">
         <tr class="eventDate">
           <th>Giovedì 22.07.2020</th>
@@ -200,7 +243,7 @@
 
 
   <div class="livemain_24" style="display:none">
-    <div class="listElement" style="height: 22vw; max-height: 22vw">
+    <div class="listElement">
       <table style="width:100%; background-color: black">
         <tr class="eventDate">
           <th>Venerdì 22.07.2020</th>
@@ -210,7 +253,7 @@
       <div class="eventName">Friday morning<br>con Toto Cutugno</div>
     </div>
 
-    <div class="listElement" style="height: 22vw; max-height: 22vw">
+    <div class="listElement">
       <table style="width:100%; background-color: black">
         <tr class="eventDate">
           <th>Venerdì 22.07.2020</th>
@@ -220,7 +263,7 @@
       <div class="eventName">Pimpumpam<br>eccallà</div>
     </div>
 
-    <div class="listElement" style="height: 22vw; max-height: 22vw">
+    <div class="listElement">
       <table style="width:100%; background-color: black">
         <tr class="eventDate">
           <th>Venerdì 22.07.2020</th>
@@ -230,7 +273,7 @@
       <div class="eventName">Exceptional thinking</div>
     </div>
 
-    <div class="listElement" style="height: 22vw; max-height: 22vw">
+    <div class="listElement">
       <table style="width:100%; background-color: black">
         <tr class="eventDate">
           <th>Venerdì 22.07.2020</th>
@@ -240,7 +283,7 @@
       <div class="eventName">Uasciu uari uari</div>
     </div>
 
-    <div class="listElement" style="height: 22vw; max-height: 22vw">
+    <div class="listElement">
       <table style="width:100%; background-color: black">
         <tr class="eventDate">
           <th>Venerdì 22.07.2020</th>
@@ -250,7 +293,7 @@
       <div class="eventName">Vecchiaia</div>
     </div>
 
-    <div class="listElement" style="height: 22vw; max-height: 22vw">
+    <div class="listElement">
       <table style="width:100%; background-color: black">
         <tr class="eventDate">
           <th>Venerdì 22.07.2020</th>
@@ -260,7 +303,7 @@
       <div class="eventName">Bellezze marziane</div>
     </div>
 
-    <div class="listElement" style="height: 22vw; max-height: 22vw">
+    <div class="listElement">
       <table style="width:100%; background-color: black">
         <tr class="eventDate">
           <th>Venerdì 22.07.2020</th>
@@ -270,7 +313,7 @@
       <div class="eventName">Showcase Progetti</div>
     </div>
 
-    <div class="listElement" style="height: 22vw; max-height: 22vw">
+    <div class="listElement">
       <table style="width:100%; background-color: black">
         <tr class="eventDate">
           <th>Venerdì 22.07.2020</th>
@@ -297,7 +340,7 @@
 
   //SCRIPT TO ACTIVATE EVENTS
   var now = new Date();
-  var start = 12 //hour PARADE starts
+  var start = 9 //hour PARADE starts
   for (i = start; i < now.getHours(); i++) {
     document.getElementsByClassName('listElement')[i-start].style.color = "black";
   }
@@ -309,17 +352,15 @@
   //SCRIPT TO OPEN EVENTS
   var acc = document.getElementsByClassName('listElement');
   for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener('click', function() {
+    acc[i].addEventListener('click', function() {
 
-    if ((this.style.color != 'lightgrey') && (this.style.maxHeight === '22vw')) {
-      this.style.maxHeight = '110vw';
-      this.style.height = '110vw';
-      this.children[2].style.display = "inline";
-    } else {
-      this.style.maxHeight = '22vw';
-      this.children[2].style.display = "none";
-    }
-  });
+      if ((this.style.color != 'lightgrey') && (this.children[2].style.display != 'inline')) {
+        this.children[2].style.display = "inline";
+      } else {
+        this.children[2].style.display = "none";
+      }
+    });
+  }
 
   //SCRIPTS TO CHANGE THE DAY
   function open22() {
@@ -327,39 +368,45 @@
     document.getElementsByClassName("livemain_23")[0].style.display = "none";
     document.getElementsByClassName("livemain_24")[0].style.display = "none";
     document.getElementById("day22").style.color = "black";
-    document.getElementById("day22").innerHTML = "22.07";
+    document.getElementById("day22").innerHTML = "22";
     document.getElementById("day23").style.color = "lightgrey";
     document.getElementById("day23").innerHTML = "23";
     document.getElementById("day24").style.color = "lightgrey";
     document.getElementById("day24").innerHTML = "24";
-    document.getElementById("day22").style.width = "42%";
+    //document.getElementById("day22").style.width = "42%";
   }
   function open23() {
     document.getElementsByClassName("livemain_23")[0].style.display = "block";
     document.getElementsByClassName("livemain_22")[0].style.display = "none";
     document.getElementsByClassName("livemain_24")[0].style.display = "none";
     document.getElementById("day23").style.color = "black";
-    document.getElementById("day23").innerHTML = "23.07";
+    document.getElementById("day23").innerHTML = "23";
     document.getElementById("day22").style.color = "lightgrey";
     document.getElementById("day22").innerHTML = "22";
     document.getElementById("day24").style.color = "lightgrey";
     document.getElementById("day24").innerHTML = "24";
-    document.getElementById("day22").style.width = "36%";
+    //document.getElementById("day22").style.width = "36%";
   }
   function open24() {
     document.getElementsByClassName("livemain_24")[0].style.display = "block";
     document.getElementsByClassName("livemain_22")[0].style.display = "none";
     document.getElementsByClassName("livemain_23")[0].style.display = "none";
     document.getElementById("day24").style.color = "black";
-    document.getElementById("day24").innerHTML = "24.07";
+    document.getElementById("day24").innerHTML = "24";
     document.getElementById("day22").style.color = "lightgrey";
     document.getElementById("day22").innerHTML = "22";
     document.getElementById("day23").style.color = "lightgrey";
     document.getElementById("day23").innerHTML = "23";
-    document.getElementById("day22").style.width = "42%";
+    //document.getElementById("day22").style.width = "42%";
   }
 
-}
+
+  //SCRIPT AMIR
+  (async() => {
+    const API_URL = "https://dp.isiaurbino.net/api/x-publishing/workshop-coding/fabio";
+    const unconv = await fetch(API_URL).then(r => r.json());
+    console.log(unconv.data);
+  });
 
 
 </script>
