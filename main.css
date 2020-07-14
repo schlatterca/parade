@@ -22,7 +22,7 @@
   text-align: center;
   border: 0px solid black;
   height: 28vw;
-  /*font-size: 30px;*/
+  z-index: 1;
   border-style: hidden hidden solid hidden;
 }
 
@@ -97,16 +97,14 @@
 
 #inside{
       font-family: 'Arial Rounded MT';
-      padding: 0 0 0 10px;
-      border border-radius: 10px;
-      border: 1px solid black;
+      padding: 0 0 0 0px;
+      border: none;
       font-size: 4vw;
     }
 
 .inside{
       font-family: 'Arial Rounded MT';
       padding: 0 0 0 0px;
-      border border-radius: 10px;
       border: 0px solid black;
       font-size: 4vw;
       margin: 0px;
@@ -145,16 +143,7 @@
   animation: slideleft 1000s infinite linear;
 } */
 
-#inside{
-  font-family: 'Arial Rounded MT';
-  padding: 0 0 0 10px;
-  height: 10vh;
-  /*border-radius: 5px;*/
-  text-align: left;
-  font-size: 30px;
-}
-
-  #insidefirst{
+#insidefirst{
   font-family: 'Arial Rounded MT';
   padding: 0 0 0 10px;
   height: 10vh;
@@ -283,10 +272,9 @@ th {
   margin-bottom: 20px;
 }
 
-#inside{
-  color: none;
-  border: none;
-  padding: 0px;
+audio{
+  margin-top: -10px;
+  margin-bottom: 50px;
 }
 
 img{
