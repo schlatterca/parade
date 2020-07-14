@@ -98,11 +98,18 @@
 #inside{
       font-family: 'Arial Rounded MT';
       padding: 0 0 0 10px;
-      /*height: 10vw;*/
       border border-radius: 10px;
       border: 1px solid black;
-      text-align: left;
       font-size: 4vw;
+    }
+
+.inside{
+      font-family: 'Arial Rounded MT';
+      padding: 0 0 0 0px;
+      border border-radius: 10px;
+      border: 0px solid black;
+      font-size: 4vw;
+      margin: 0px;
     }
 
 .about {
@@ -284,4 +291,21 @@ th {
 
 img{
   margin: 20px;
+}
+
+.didascalia{
+  font-size: 3vw;
+  text-align: left;
+  margin-left: 20px;
+  margin-top: -10px;
+  margin-bottom: 15px;
+}
+
+.didaUrl{
+  font-size: 3vw;
+  text-align: right;
+  margin-left: auto;
+  margin-right: 20px;
+  margin-top: -10px;
+  margin-bottom: 15px;
 }
