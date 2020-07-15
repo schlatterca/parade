@@ -15,8 +15,9 @@
 <body>
   <!--GIF DI SFONDO-->
   <div style="position: fixed; top: 26vw; left: -20px; margin: 0px; z-index: -1;">
-    <img src="PA.gif" style="height: 85vh; width: auto; opacity: 0.1">
+    <img src="PA.gif" style="height: 85vh; width: auto; opacity: 0.2">
   </div>
+
   <!--HEADER-->
   <div id="header">
     <div class="leftName">
@@ -24,9 +25,9 @@
     </div>
     <div class="rightName">PARADE 2020</div>
     <div class="underName">Interviste, progetti, playlist. Mer 22—Ven 24.07</div>
-    <div id="day22" class="leftName" style="transition:0.5s; width: 42%" onclick="open22()">22</div>
-    <div id="day23" class="rightName" style="transition:0.5s; float: center; color: lightgrey" onclick="open23()">23</div>
-    <div id="day24" class="rightName" style="transition:0.5s; float: right; padding-right: 30px; color: lightgrey" onclick="open24()">24</div>
+    <div id="day22" class="leftName" style="transition:0.2s; width: 42%" onclick="open22()">22</div>
+    <div id="day23" class="leftName" style="transition:0.2s; float: center; color: lightgrey" onclick="open23()">23</div>
+    <div id="day24" class="leftName" style="transition:0.2s; float: right; padding-right: 30px; color: lightgrey" onclick="open24()">24</div>
   </div>
   <!--CLOSE HEADER-->
 
@@ -40,15 +41,10 @@
         </tr>
       </table>
       <div class="eventName">Wednesday morning<br>con Silvia Sfligiotti</div>
-      <div id="inside" style="display:none">
-        <p><iframe width="100%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&hide_artwork=1&feed=%2Fsonosolo%2Ffall-mix%2F" frameborder="0" ></iframe></p>
+      <div class="inside" style="display:none">
         <img src="img1.jpg" width="96%">
-        <p class="didascalia">una bella immagine.</p>
-        <img src="img2.jpg" width="96%">
-        <p class="didascalia">un'immagine ancora migliore.</p>
-        <img src="img3.jpg" width="96%">
         <div style="display: flex">
-          <p class="didascalia">un'immagine urfida.</p>
+          <p class="didascalia">questa non è Silvia Sfligiotti.</p>
           <a class="didaUrl" href="http://www.google.com">scopri di più</a>
         </div>
       </div>
@@ -62,11 +58,8 @@
         </tr>
       </table>
       <div class="eventName">Valto’s Bookshop Corner<br>con Francesco Valtolina</div>
-      <div id="inside" style="display:none">
+      <div class="inside" style="display:none">
         <p><iframe width="100%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2Fsonosolo%2Ffall-mix%2F" frameborder="0" ></iframe></p>
-        <img src="img3.jpg" width="70%">
-        <img src="img1.jpg" width="20%">
-        <img src="img2.jpg" width="40%" style="margin-left: 80px">
       </div>
     </div>
 
@@ -78,6 +71,7 @@
         </tr>
       </table>
       <div class="eventName">Esisto anche se non vuoi<br>&nbsp;</div>
+      <div class="inside" style="display:none"></div>
     </div>
 
     <div class="listElement">
@@ -88,6 +82,7 @@
         </tr>
       </table>
       <div class="eventName">ISIA U x Santarcangelo<br>&nbsp;</div>
+      <div class="inside" style="display:none"></div>
     </div>
 
     <div class="listElement">
@@ -98,6 +93,7 @@
         </tr>
       </table>
       <div class="eventName">Soundscape a cura<br>di Grotta Veterano</div>
+      <div class="inside" style="display:none"></div>
     </div>
 
     <div class="listElement">
@@ -108,6 +104,7 @@
         </tr>
       </table>
       <div class="eventName">Showcase progetti 2019/20<br>&nbsp;</div>
+      <div class="inside" style="display:none"></div>
     </div>
 
     <div class="listElement">
@@ -118,6 +115,7 @@
         </tr>
       </table>
       <div class="eventName">Showcase Tesi di Laurea<br>&nbsp;</div>
+      <div class="inside" style="display:none"></div>
     </div>
 
     <div class="listElement">
@@ -128,6 +126,7 @@
         </tr>
       </table>
       <div class="eventName">Showcase progetti 2019/20<br>&nbsp;</div>
+      <div class="inside" style="display:none"></div>
     </div>
 
     <div class="listElement">
@@ -138,6 +137,9 @@
         </tr>
       </table>
       <div class="eventName">Selezione musicale a cura<br>di Godblesscomputers</div>
+      <div class="inside" style="display:none">
+        <p><iframe width="100%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&hide_artwork=1&feed=%2Fsonosolo%2Ffall-mix%2F" frameborder="0" ></iframe></p>
+      </div>
     </div>
 
     <div class="listElement">
@@ -148,6 +150,7 @@
         </tr>
       </table>
       <div class="eventName">Patrick Lacey in talk<br>con Finn Williams</div>
+      <div class="inside" style="display:none"></div>
     </div>
 
     <div class="listElement">
@@ -157,7 +160,8 @@
           <th style="float: right">12:00</th> 
         </tr>
       </table>
-      <div class="eventName">Music sounds better with U<br>– DJ Golpe & Veridis</div>
+      <div class="eventName">Music sounds better with U<br>DJ Golpe & Veridis</div>
+      <div class="inside" style="display:none"></div>
     </div>
 
   </div>
@@ -167,104 +171,117 @@
     <div class="listElement">
       <table style="width:100%; background-color: black">
         <tr class="eventDate">
-          <th>Giovedì 22.07.2020</th>
+          <th>Giovedì 23.07.2020</th>
           <th style="float: right">09:00</th> 
         </tr>
       </table>
       <div class="eventName">Thursday morning<br>con Marta Sironi</div>
+      <div class="inside" style="display:none"></div>
     </div>
 
     <div class="listElement">
       <table style="width:100%; background-color: black">
         <tr class="eventDate">
-          <th>Giovedì 22.07.2020</th>
+          <th>Giovedì 23.07.2020</th>
           <th style="float: right">10:00</th> 
         </tr>
       </table>
       <div class="eventName">Book selection<br>con Silvana Sola</div>
+      <div class="inside" style="display:none"></div>
     </div>
 
     <div class="listElement">
       <table style="width:100%; background-color: black">
         <tr class="eventDate">
-          <th>Giovedì 22.07.2020</th>
+          <th>Giovedì 23.07.2020</th>
           <th style="float: right">11:00</th> 
         </tr>
       </table>
       <div class="eventName">Unconventional Posting<br>&nbsp;</div>
+      <div class="inside" style="display:none"></div>
+    </div>
+
+    <div class="listElement">
+      <table style="width:100%; background-color: black">
+        <tr class="eventDate">
+          <th>Giovedì 23.07.2020</th>
+          <th style="float: right">11:30</th> 
+        </tr>
+      </table>
+      <div class="eventName">Figure del presente<br>&nbsp;</div>
+      <div class="inside" style="display:none"></div>
+    </div>
+
+    <div class="listElement">
+      <table style="width:100%; background-color: black">
+        <tr class="eventDate">
+          <th>Giovedì 23.07.2020</th>
+          <th style="float: right">12:00</th> 
+        </tr>
+      </table>
+      <div class="eventName">Soundscape a cura<br>di Grotta Veterano</div>
+      <div class="inside" style="display:none"></div>
+    </div>
+
+    <div class="listElement">
+      <table style="width:100%; background-color: black">
+        <tr class="eventDate">
+          <th>Giovedì 23.07.2020</th>
+          <th style="float: right">12:00</th> 
+        </tr>
+      </table>
+      <div class="eventName">Showcase progetti 2019/20<br>&nbsp;</div>
       <div class="inside" style="display:none">
-        <!--qui contenuti-->
+        <p><iframe width="100%" height="500" src="https://player.vimeo.com/video/438472185" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></p>
+        <div style="display: flex">
+          <p class="didascalia">un progetto bello assai.</p>
+          <a class="didaUrl" href="http://www.google.com">scopri di più</a>
+        </div>
       </div>
     </div>
 
     <div class="listElement">
       <table style="width:100%; background-color: black">
         <tr class="eventDate">
-          <th>Giovedì 22.07.2020</th>
-          <th style="float: right">11:30</th> 
-        </tr>
-      </table>
-      <div class="eventName">Figure del presente<br>&nbsp;</div>
-    </div>
-
-    <div class="listElement">
-      <table style="width:100%; background-color: black">
-        <tr class="eventDate">
-          <th>Giovedì 22.07.2020</th>
-          <th style="float: right">12:00</th> 
-        </tr>
-      </table>
-      <div class="eventName">Soundscape a cura<br>di Grotta Veterano</div>
-    </div>
-
-    <div class="listElement">
-      <table style="width:100%; background-color: black">
-        <tr class="eventDate">
-          <th>Giovedì 22.07.2020</th>
-          <th style="float: right">12:00</th> 
-        </tr>
-      </table>
-      <div class="eventName">Showcase progetti 2019/20<br>&nbsp;</div>
-    </div>
-
-    <div class="listElement">
-      <table style="width:100%; background-color: black">
-        <tr class="eventDate">
-          <th>Giovedì 22.07.2020</th>
+          <th>Giovedì 23.07.2020</th>
           <th style="float: right">12:00</th> 
         </tr>
       </table>
       <div class="eventName">Showcase Tesi di Laurea<br>&nbsp;</div>
+      <div class="inside" style="display:none"></div>
     </div>
 
     <div class="listElement">
       <table style="width:100%; background-color: black">
         <tr class="eventDate">
-          <th>Giovedì 22.07.2020</th>
+          <th>Giovedì 23.07.2020</th>
           <th style="float: right">12:00</th> 
         </tr>
       </table>
       <div class="eventName">Showcase progetti 2019/20<br>&nbsp;</div>
+      <div class="inside" style="display:none"></div>
     </div>
 
     <div class="listElement">
       <table style="width:100%; background-color: black">
         <tr class="eventDate">
-          <th>Giovedì 22.07.2020</th>
+          <th>Giovedì 23.07.2020</th>
           <th style="float: right">12:00</th> 
         </tr>
       </table>
       <div class="eventName">Selezione musicale<br>a cura di Ayce Bio</div>
+      <div class="inside" style="display:none"></div>
     </div>
 
     <div class="listElement">
       <table style="width:100%; background-color: black">
         <tr class="eventDate">
-          <th>Giovedì 22.07.2020</th>
+          <th>Giovedì 23.07.2020</th>
           <th style="float: right">12:00</th> 
         </tr>
       </table>
       <div class="eventName">DJ set a cura<br>di Congarou</div>
+      <div class="inside" style="display:none"></div>
     </div>
 
   </div>
@@ -275,111 +292,122 @@
     <div class="listElement">
       <table style="width:100%; background-color: black">
         <tr class="eventDate">
-          <th>Venerdì 22.07.2020</th>
+          <th>Venerdì 24.07.2020</th>
           <th style="float: right">09:00</th> 
         </tr>
       </table>
       <div class="eventName">Friday morning<br>con Magda Guidi e Mara Cerri</div>
+      <div class="inside" style="display:none"></div>
     </div>
 
     <div class="listElement">
       <table style="width:100%; background-color: black">
         <tr class="eventDate">
-          <th>Venerdì 22.07.2020</th>
+          <th>Venerdì 24.07.2020</th>
           <th style="float: right">10:00</th> 
         </tr>
       </table>
       <div class="eventName">Book selection<br>con Giovanna Silva</div>
+      <div class="inside" style="display:none"></div>
     </div>
 
     <div class="listElement">
       <table style="width:100%; background-color: black">
         <tr class="eventDate">
-          <th>Venerdì 22.07.2020</th>
+          <th>Venerdì 24.07.2020</th>
           <th style="float: right">11:00</th> 
         </tr>
       </table>
       <div class="eventName">I padroni della Riviera<br>&nbsp;</div>
+      <div class="inside" style="display:none"></div>
     </div>
 
     <div class="listElement">
       <table style="width:100%; background-color: black">
         <tr class="eventDate">
-          <th>Venerdì 22.07.2020</th>
+          <th>Venerdì 24.07.2020</th>
           <th style="float: right">11:30</th> 
         </tr>
       </table>
       <div class="eventName">Capsula<br>&nbsp;</div>
+      <div class="inside" style="display:none"></div>
     </div>
 
     <div class="listElement">
       <table style="width:100%; background-color: black">
         <tr class="eventDate">
-          <th>Venerdì 22.07.2020</th>
+          <th>Venerdì 24.07.2020</th>
           <th style="float: right">12:00</th> 
         </tr>
       </table>
       <div class="eventName">Soundscape a cura<br>di Grotta Veterano</div>
+      <div class="inside" style="display:none"></div>
     </div>
 
     <div class="listElement">
       <table style="width:100%; background-color: black">
         <tr class="eventDate">
-          <th>Venerdì 22.07.2020</th>
+          <th>Venerdì 24.07.2020</th>
           <th style="float: right">12:00</th> 
         </tr>
       </table>
       <div class="eventName">Showcase progetti 2019/20<br>&nbsp;</div>
+      <div class="inside" style="display:none"></div>
     </div>
 
     <div class="listElement">
       <table style="width:100%; background-color: black">
         <tr class="eventDate">
-          <th>Venerdì 22.07.2020</th>
+          <th>Venerdì 24.07.2020</th>
           <th style="float: right">12:00</th> 
         </tr>
       </table>
       <div class="eventName">Showcase Tesi di Laurea<br>&nbsp;</div>
+      <div class="inside" style="display:none"></div>
     </div>
 
     <div class="listElement">
       <table style="width:100%; background-color: black">
         <tr class="eventDate">
-          <th>Venerdì 22.07.2020</th>
+          <th>Venerdì 24.07.2020</th>
           <th style="float: right">12:00</th> 
         </tr>
       </table>
       <div class="eventName">Showcase progetti 2019/20<br>&nbsp;</div>
+      <div class="inside" style="display:none"></div>
     </div>
 
     <div class="listElement">
       <table style="width:100%; background-color: black">
         <tr class="eventDate">
-          <th>Venerdì 22.07.2020</th>
+          <th>Venerdì 24.07.2020</th>
           <th style="float: right">12:00</th> 
         </tr>
       </table>
       <div class="eventName">Selezione musicale a cura<br>di Palm Wine (Invernomuto)</div>
+      <div class="inside" style="display:none"></div>
     </div>
 
     <div class="listElement">
       <table style="width:100%; background-color: black">
         <tr class="eventDate">
-          <th>Venerdì 22.07.2020</th>
+          <th>Venerdì 24.07.2020</th>
           <th style="float: right">12:00</th> 
         </tr>
       </table>
       <div class="eventName">Jonathan Pierini in talk<br>con Francesco Zurlo</div>
+      <div class="inside" style="display:none"></div>
     </div>
 
     <div class="listElement">
       <table style="width:100%; background-color: black">
         <tr class="eventDate">
-          <th>Venerdì 22.07.2020</th>
+          <th>Venerdì 24.07.2020</th>
           <th style="float: right">12:00</th> 
         </tr>
       </table>
       <div class="eventName">DJ set a cura<br>di Flexing Moment</div>
+      <div class="inside" style="display:none"></div>
     </div>
 
   </div>
@@ -388,7 +416,7 @@
 
   <!--FOOTER>
   <div id="footer">
-    <marquee class="about" scrollamount = 8 >UP NEXT: i dialoghi di Sonnoli</marquee>
+    <marquee class="about" scrolldelay="25" scrollamount="4" truespeed="">UP NEXT: i dialoghi di Sonnoli</marquee>
   </div>
   <CLOSE FOOTER-->
 
@@ -399,11 +427,13 @@
 
   //SCRIPT TO ACTIVATE EVENTS
   var now = new Date();
-  var start = 5 //hour PARADE starts
-  for (i = start; i < now.getHours(); i++) {
+  var start = 0 //hour PARADE starts
+  for (i = start; i < now.getHours() +10; i++) {
+    //+20 UP HERE TO MAKE ALL EVENTS AVAILABLE, DELETE IT
     document.getElementsByClassName('listElement')[i-start].style.color = "black";
   }
-  for (i = document.getElementsByClassName('listElement').length; i > now.getHours()-start; i--) {
+  for (i = document.getElementsByClassName('listElement').length; i > now.getHours()-start +10; i--) {
+    //+10 UP HERE TO MAKE ALL EVENTS AVAILABLE, DELETE IT
     document.getElementsByClassName('listElement')[i-1].style.color = "lightgrey";
   }
 
@@ -415,14 +445,23 @@
 
       if ((this.style.color != 'lightgrey') && (this.children[2].style.display != 'inline')) {
         this.children[2].style.display = "inline";
+
+        for (i=0; i<acc.length; i++){
+          if ((acc[i].children[2].style.display != 'none') && (acc[i] != this)) {
+            acc[i].children[2].style.display = 'none';
+          }
+        }
       } else {
         this.children[2].style.display = "none";
+        //this.style.height = "0px";
       }
+
     });
   }
 
   //SCRIPTS TO CHANGE THE DAY
   function open22() {
+    window.scrollTo(0,0);
     document.getElementsByClassName("livemain_22")[0].style.display = "block";
     document.getElementsByClassName("livemain_23")[0].style.display = "none";
     document.getElementsByClassName("livemain_24")[0].style.display = "none";
@@ -432,9 +471,13 @@
     document.getElementById("day23").innerHTML = "23";
     document.getElementById("day24").style.color = "lightgrey";
     document.getElementById("day24").innerHTML = "24";
-    //document.getElementById("day22").style.width = "42%";
+    //this closes all tabs when user clicks on day
+    for (i = 0; i < acc.length; i++) {
+      acc[i].children[2].style.display = "none";
+    }
   }
   function open23() {
+    window.scrollTo(0,0);
     document.getElementsByClassName("livemain_23")[0].style.display = "block";
     document.getElementsByClassName("livemain_22")[0].style.display = "none";
     document.getElementsByClassName("livemain_24")[0].style.display = "none";
@@ -444,9 +487,12 @@
     document.getElementById("day22").innerHTML = "22";
     document.getElementById("day24").style.color = "lightgrey";
     document.getElementById("day24").innerHTML = "24";
-    //document.getElementById("day22").style.width = "36%";
+    for (i = 0; i < acc.length; i++) {
+      acc[i].children[2].style.display = "none";
+    }
   }
   function open24() {
+    window.scrollTo(0,0);
     document.getElementsByClassName("livemain_24")[0].style.display = "block";
     document.getElementsByClassName("livemain_22")[0].style.display = "none";
     document.getElementsByClassName("livemain_23")[0].style.display = "none";
@@ -456,11 +502,14 @@
     document.getElementById("day22").innerHTML = "22";
     document.getElementById("day23").style.color = "lightgrey";
     document.getElementById("day23").innerHTML = "23";
-    //document.getElementById("day22").style.width = "42%";
+    for (i = 0; i < acc.length; i++) {
+      acc[i].children[2].style.display = "none";
+    }
   }
 
 
   //SCRIPT AMIR
+  //THIS RETRIEVES FILES FROM GOOGLE DRIVE
   const isAudio = (file) => {
     return file.metadata.mimeType.indexOf("audio/") > -1;
   }
@@ -469,6 +518,7 @@
     const audioElement = document.createElement("audio");
 
     audioElement.setAttribute("controls", "true");
+    audioElement.setAttribute("controlsList", "nodownload");
 
     file.content.urls.forEach(urlObj => {
       const sourceElement = document.createElement("source");
@@ -479,58 +529,107 @@
 
     })
 
-    whatToAppendTo.append(audioElement);
+    whatToAppendTo.prepend(audioElement);
   }
 
   const isImage = (file) => {
     return file.metadata.mimeType.indexOf("image/") > -1;
   }
 
-  function createImage( image, whatToAppendTo){
+  function createImageElement( image, whatToAppendTo){
 
-    // create a element 
-    const textContainer = document.createElement( "div" );
-    textContainer.className = "text"
+    //
 
-    const titleElement = document.createElement("h2");
-    titleElement.className = "title";
+    const imgContainer = document.createElement("img");
+    imgContainer.className = "image-container";
 
-    titleElement.innerHTML = image.metadata.name;
+    const imageUrl = image.content.responsiveUrls[2] + ".jpg";
 
+    imgContainer.src = imageUrl;
 
-    const bodyTextElement = document.createElement("div");
-    bodyTextElement.className = "body-text";
-    bodyTextElement.innerHTML = image.content.html;
+    const titleElement = document.createElement("p");
+    titleElement.className = "didascalia";
 
-    textContainer.append(titleElement);
-    textContainer.append(bodyTextElement);
+    if (image.content.title == "Iperomanzo_1") {
+      titleElement.innerHTML = "Il progetto ruota attorno due punti fondamentali di riflessione…";
+    } if (image.content.title == "Iperomanzo_2") {
+      titleElement.innerHTML = "…Da una parte, la comunità come organismo contemporaneamente autonomo in sé e necessariamente dipendente dalle individualità che la generano attraverso le interrelazioni che si intessono quotidianamente tra di esse.";
+    } if (image.content.title == "Iperomanzo_3") {
+      titleElement.innerHTML = "…Dall'altra, Santarcangelo Festival come tipologia particolare di comunità, caratterizzata dalla durata temporale circoscritta e dalla fluidità dei suoi componenti.";
+    } if (image.content.title == "Iperomanzo_4") {
+      titleElement.innerHTML = "Il progetto si costituisce essenzialmente come processo, una sorta di rituale che si presenta, in ultima analisi, come una macchina narrativa attraverso la quale la comunità stessa viene chiamata a raccontarsi secondo modalità inattese e non-retoriche.";
+    }
 
-    whatToAppendTo.append(textContainer);
+    if (image.content.title == "UP_1") {
+      titleElement.innerHTML = "I tre manifesti realizzati per l'evento Unconventional Posting rimandano al tema della traducibilità dei diversi linguaggi.";
+    } if (image.content.title == "UP_2") {
+      titleElement.innerHTML = "Il sito internet di UP, modificabile dall'utente.";
+    } if (image.content.title == "UP_3") {
+      titleElement.innerHTML = "Anche la sezione info del sito nasconde" + "<i> easter egg </i>" + "nascosti.";
+    } if (image.content.title == "UP_4") {
+      titleElement.innerHTML = "I diversi artefatti dialogano l'uno con l'altro: un QR code,"+"<br>"+"ad esempio, collega i manifesti a sezioni nascoste del sito.";
+    } if (image.content.title == "UP_5") {
+      titleElement.innerHTML = "Se applicato sul manifesto, il foglio di sala ne modifica contenuti e significati.";
+    }
+
+    whatToAppendTo.append(imgContainer);
+    whatToAppendTo.append(titleElement);
+
+    if (image.content.title == "Iperomanzo_6") {
+      const linkSection = document.createElement("div");
+      const linkElement = document.createElement("a");
+      linkSection.style.display = "flex";
+      linkElement.className = "didaUrl";
+      linkElement.href = "https://www.santarcangelofestival.com";
+      linkElement.target = "_blank";
+      linkElement.innerHTML = "Santarcangelo Festival"
+
+      linkSection.append(linkElement);
+      whatToAppendTo.append(linkSection);
+    }
+
+    if (image.content.title == "UP_5") {
+      const linkSection = document.createElement("div");
+      const linkElement = document.createElement("a");
+      linkSection.style.display = "flex";
+      linkElement.className = "didaUrl";
+      linkElement.href = "http://www.unconv-posting.com";
+      linkElement.innerHTML = "www.unconv-posting.com"
+
+      linkSection.append(linkElement);
+      whatToAppendTo.append(linkSection);
+    }
+
   }
 
-
-
-
+  //Iperomanzo
   (async() => {
-    const API_URL = "https://dp.isiaurbino.net/api/parade/23-luglio-2020/3-unconventional-posting";
-    const unconv = await fetch(API_URL).then(r => r.json());
-    //console.log(unconv.data);
+    const API_URL = "https://dp.isiaurbino.net/api/parade/22-luglio-2020/4-santarcangelo";
+    const iperoman = await fetch(API_URL).then(r => r.json());
 
-    unconv.data.forEach((file) => {
-      if( isImage(file) ){
-        //createImageElement(file);
-        console.log("ciao");
-      } if( isAudio(file) ) {
-        createAudioElement(file, document.body.getElementsByClassName("livemain_23")[0].getElementsByClassName("listElement")[2].getElementsByClassName("inside")[0]);
+    iperoman.data.forEach((file) => {
+      if( isAudio(file) ) {
+        createAudioElement(file, document.body.getElementsByClassName("livemain_22")[0].getElementsByClassName("listElement")[3].getElementsByClassName("inside")[0]);
+      } if( isImage(file) ){
+        createImageElement(file, document.body.getElementsByClassName("livemain_22")[0].getElementsByClassName("listElement")[3].getElementsByClassName("inside")[0]);
       }
     });
   })();
 
-  console.log(document.body.getElementsByClassName("livemain_23")[0].getElementsByClassName("listElement")[2].getElementsByClassName("inside")[0].innerHTML);
-  //console.log(document.getElementById("inside"));
+  //UnconventionalPosting
+  (async() => {
+    const API_URL = "https://dp.isiaurbino.net/api/parade/23-luglio-2020/3-unconventional-posting";
+    const unconv = await fetch(API_URL).then(r => r.json());
 
+    unconv.data.forEach((file) => {
+      if( isAudio(file) ) {
+        createAudioElement(file, document.body.getElementsByClassName("livemain_23")[0].getElementsByClassName("listElement")[2].getElementsByClassName("inside")[0]);
+      } if( isImage(file) ){
+        createImageElement(file, document.body.getElementsByClassName("livemain_23")[0].getElementsByClassName("listElement")[2].getElementsByClassName("inside")[0]);
+      }
+    });
+  })();
 
 </script>
 
 </html>
-o
