@@ -10,24 +10,33 @@
     font-display: swap;
 }
 
+html{
+  overflow: auto;
+}
+
+body{
+  margin: 0;
+  overflow: hidden;
+}
+
 #header {
   font-family: 'Arial Rounded MT';
   position: fixed;
   top: 0;
-  background-color: white;
   float: left;
   color: #000;
   padding: 0px;
-  width: 100%;
   text-align: center;
-  border: 0px solid black;
+  border: 2px solid black;
   height: 28vw;
   z-index: 1;
-  border-style: hidden hidden solid hidden;
+  border-style: hidden solid solid solid;
+  margin-left: 30px;
+  margin-right: 30px;
 }
 
 .leftName {
-  font-size: 8.6vw;
+  font-size: 8vw;
   float: left;
   /*width: 50%;*/
   padding: 5px;
@@ -35,7 +44,7 @@
 }
 
 .rightName {
-  font-size: 8.6vw;
+  font-size: 8vw;
   float: right;
   /*width: 50%;*/
   padding: 5px;
@@ -111,6 +120,13 @@
       height: 0px;
     }
 
+.gallery{
+  height: 800px;
+  overflow-y: overlay;
+  overflow-x: hidden;
+  margin-bottom: 20px;
+}
+
 .about {
   background-color: #fff;
   color: #000;
@@ -167,7 +183,7 @@
 
 p {
   font-family: 'Arial Rounded MT';
-  padding: 0 1%;
+  padding: 0 0%;
   font-size: 25px;
 }
 
@@ -216,6 +232,12 @@ outline:none;
   text-align: left;
   padding: 30px;
   border: 0px solid red;
+  position: absolute;
+  overflow: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 .livemain_23{
@@ -229,6 +251,12 @@ outline:none;
   text-align: left;
   padding: 30px;
   border: 0px solid red;
+  position: absolute;
+  overflow: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 .livemain_24{
@@ -242,6 +270,12 @@ outline:none;
   text-align: left;
   padding: 30px;
   border: 0px solid red;
+  position: absolute;
+  overflow: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 .listElement{
@@ -252,9 +286,10 @@ outline:none;
 th {
   font-family: 'Arial Rounded MT';
   font-weight: normal;
-  padding-top: 5px;
+  padding-top: 8px;
   padding-left: 20px;
   padding-right: 20px;
+  padding-bottom: 10px;
 }
 
 .eventDate{
@@ -262,6 +297,7 @@ th {
   color: white;
   text-align: left;
   width: 100%;
+  height: 60px;
 }
 
 .eventName{
@@ -271,6 +307,11 @@ th {
   padding-top: 5px;
   padding-left: 20px;
   margin-bottom: 20px;
+}
+
+.eventName autori{
+  font-size: 3vw;
+  line-height: 1vw;
 }
 
 audio{
@@ -289,6 +330,7 @@ img{
   font-size: 3vw;
   text-align: left;
   margin-left: 20px;
+  margin-right: 20px;
   margin-top: -10px;
   margin-bottom: 15px;
 }
