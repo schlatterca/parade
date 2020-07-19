@@ -388,3 +388,7 @@ img{
   margin-top: -10px;
   margin-bottom: 15px;
 }
+
+.unavailable{
+  color: rgb(178, 180, 182);
+}
