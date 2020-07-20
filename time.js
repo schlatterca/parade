@@ -11,6 +11,9 @@ function onUnload(e) {
   delete e['returnValue'];
 };
 
+
+
+
 function setup() {
   console.log("In setup");
   data = new Date();
@@ -20,6 +23,8 @@ function setup() {
   hour = data.getHours();
   minute = data.getMinutes();
   second = data.getSeconds();
+
+  checkLayout();
 
   triggerOnDate(19, 14, false, "22_1");
   triggerOnDate(19, 14, false, "22_2");
@@ -82,6 +87,28 @@ function triggerOnDate(day_, hour_, halfAnHour, id){
 
 
 
+}
+
+
+
+function checkLayout(){
+  if (window.innerWidth > 600) {
+    // DESKTOP
+    document.getElementsByClassName("livemain_22")[0].style.display = "block";
+    document.getElementsByClassName("livemain_23")[0].style.display = "block";
+    document.getElementsByClassName("livemain_24")[0].style.display = "block";
+    document.getElementById("day24").style.color = "black";
+    document.getElementById("day24").innerHTML = "24 luglio";
+    document.getElementById("day22").style.color = "black";
+    document.getElementById("day22").innerHTML = "22 luglio";
+    document.getElementById("day23").style.color = "black";
+    document.getElementById("day23").innerHTML = "23 luglio";
+  } else {
+    // MOBILE
+    open23();
+    open24();
+    open22();
+  }
 }
 
 
